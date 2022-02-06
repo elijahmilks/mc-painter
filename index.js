@@ -22,7 +22,7 @@ for (let x = 0; x <= Number(data.dimension[0].width); x++) {
 }
 
 app.get('/dimensions', (req, res) => {
-    res.send(`${data.dimension.width},${data.dimension.height},${data.dimension.depth}`);
+    res.send(`${data.dimension[0].width},${data.dimension[0].height},${data.dimension[0].depth}`);
 });
 
 app.get('/', (req, res) => {
